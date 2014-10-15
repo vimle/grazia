@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MrDafoeRegular';
+    src: url('mrdafoe.eot');
+    src: url('mrdafoe.eot') format('embedded-opentype'),
+         url('mrdafoe.woff2') format('woff2'),
+         url('mrdafoe.woff') format('woff'),
+         url('mrdafoe.ttf') format('truetype'),
+         url('mrdafoe.svg#MrDafoeRegular') format('svg');
+}
