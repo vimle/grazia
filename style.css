@@ -5,8 +5,7 @@
 	Version: 1
 	Author: Vimle
 	Author URI: http://vimle.com
-	Tags: Grazia,
-	test
+	Tags: Grazia, blank
 */
 
 /*------------------------------------*\
@@ -22,7 +21,7 @@ body {
 	background:#fff;
 	position: relative;
 	height: 100%;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1.5em;
 	color: #7b7d80;
 }
@@ -395,7 +394,6 @@ span.wpcf7-form-control-wrap textarea {
          url('fonts/gotham-book/gotham-book.ttf') format('truetype'),
          url('fonts/gotham-book/gotham-book.svg#GothamBook') format('svg');
 }
-
 
 
 /*------------------------------------*\
