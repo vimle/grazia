@@ -347,6 +347,11 @@ span.wpcf7-form-control-wrap textarea {
 	padding-right: 10px;
 }
 
+.cf-left-sidebar .social-icons {
+	width: 31px;
+	background: (../../uploads/2014/10/icon-sprite.png)
+}
+
 
 /*------------------------------------*\
     IMAGES

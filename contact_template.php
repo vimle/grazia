@@ -42,6 +42,10 @@
 						<li><img src="http://vimle.com/test/grazia/wp-content/uploads/2014/10/icon-phone.png">123.236.3214</li>
 						<li><img src="http://vimle.com/test/grazia/wp-content/uploads/2014/10/icon-email.png">info@grazia.com</li>
 					</ul>
+					
+					<div class="social-icons">
+					
+					</div>
 			</div>
 			
 			<div style="clear:both"></div>
