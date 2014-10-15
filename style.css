@@ -5,7 +5,7 @@
 	Version: 1
 	Author: Vimle
 	Author URI: http://vimle.com
-	Tags: Grazia, blank
+	Tags: Grazia,
 */
 
 /*------------------------------------*\
@@ -17,7 +17,7 @@ html {
 	height: 100%;
 }
 body {
-	font-family: "GothamBook", Century Gothic, Arial, Helvetica, sans-serif;
+	font-family: "GothamBook", Arial, Helvetica, sans-serif;
 	background:#fff;
 	position: relative;
 	height: 100%;
@@ -197,7 +197,7 @@ main h1 {
 }
 
 main h3 {
-	font-family: 'gotham_xlight',sans-serif;
+	font-family: 'GothamBook',sans-serif;
 	font-weight: inherit;
 	font-style: italic;
 	font-size: 22px;
@@ -220,7 +220,7 @@ h1.bold-title {
 	font-size: 30px;
 	line-height: 36px;
 	margin: 18px 0;
-	font-family: "gotham_medium";
+	font-family: "GothamBook";
 }
 .product-slider {
 	width: 550px;
@@ -232,7 +232,7 @@ h1.bold-title {
 .write-review {
 	font-size: 16px;
 	text-transform: none;
-	font-family: "gotham_xlight";
+	font-family: "GothamBook";
 	display: inline-block;
 	line-height: 18px;
 	padding: 2px 5px;
@@ -361,22 +361,6 @@ span.wpcf7-form-control-wrap textarea {
 /*------------------------------------*\
 	TYPOGRAPHY
 \*------------------------------------*/
-
-@font-face {
-	font-family: 'gotham_xlight';
-	src: url('fonts/gotham/gotham_xlight.eot');
-	src: local('☺'), url('fonts/gotham/gotham_xlight.woff') format('woff'), url('fonts/gotham/gotham_xlight.ttf') format('truetype'), url('fonts/gotham/gotham_xlight.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'gotham_medium';
-	src: url('fonts/gotham/gotham_medium.eot');
-	src: local('☺'), url('fonts/gotham/gotham_medium.woff') format('woff'), url('fonts/gotham/gotham_medium.ttf') format('truetype'), url('fonts/gotham/gotham_medium.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
 
 @font-face {
     font-family: 'GothamBold';
