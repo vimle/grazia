@@ -458,6 +458,17 @@ h1.blog-title {
 	padding-bottom: 27px;
 }
 
+.post-link {
+	display: inline;
+}
+
+.post-link a {
+	font-size: 15px;
+	font-family: 'GothamBook', sans-serif;
+	font-style: italic;
+	color: #e94d62;
+}
+
 
 /* contact form */
 
