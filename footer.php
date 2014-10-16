@@ -1,18 +1,11 @@
 		</div>
 		<!-- /wrapper -->
 
-		<!-- footer -->
 		<footer class="footer" role="contentinfo">
 			<div class="wrapper">
 				<img class="footer-logo" src="<?php echo bloginfo('template_url'); ?>/img/footer-logo.png" alt="Cooking is made visible">
-				<p class="copyright">
-					
-				</p>
-				<!-- /copyright -->
+				<p class="copyright">Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
 			</div>
-
-			
-
 		</footer>
 		<!-- /footer -->
 
