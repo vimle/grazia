@@ -19,7 +19,7 @@
 			<!-- /post thumbnail -->
 
 			<!-- post title -->
-			<h1>
+			<h1 class="blog-title">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 			</h1>
 			<!-- /post title -->
@@ -34,7 +34,7 @@
 
 			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 
-			<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
+			<p><?php _e( 'Categorized in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
 
 			<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
 
