@@ -26,6 +26,9 @@
 					</div>
 					<div class = "text">
 						<?php echo return_the_excerpt_max_charlength(450);?>
+						<div class="comment-count">
+							<?php commentCount(); ?>
+						</div>
 					</div>
 				<div class = "clear"></div>
 				</div>

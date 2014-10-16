@@ -477,17 +477,24 @@ function return_the_excerpt_max_charlength($charlength) {
 				$subex = substr($subex, 0, -1);
 				$returnThis .= $subex;
 			}
-			$returnThis .=  '...';
+			$returnThis .=  '';
 		} else {
 			$returnThis .= $excerpt;
 		}
-		$returnThis .= '<a href = "'.get_permalink().'">read more</a>';
+		$returnThis .= '<div class="post-link"><a href = "'.get_permalink().'">...read more</a></div>';
 		return $returnThis;
 	}
 function custom_excerpt_length( $length ) {
 	return 500;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function commentCount() {
+	global $wpdb;
+	$count = $wpdb->get_var('SELECT COUNT(comment_ID) FROM ' . $wpdb->comments. ' WHERE comment_author_email = "' . get_comment_author_email() . '"');
+	echo 'COMMENT' . '(' . $count . ')' ;
+}
+
 
 
 
