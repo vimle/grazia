@@ -56,7 +56,5 @@
 			<div style="clear:both"></div>
 		</main>
 	</div>
-	
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

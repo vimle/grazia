@@ -446,4 +446,49 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
     return '<h2>' . $content . '</h2>';
 }
 
+
+function get_first_image_url() {
+	global $post, $posts;
+	$first_img = '';
+	ob_start();
+	ob_end_clean();
+	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+	$first_img = $matches [1] [0];
+
+	if(empty($first_img)){ //Defines a default image
+		$first_img = "/images/default.jpg";
+	}
+		return $first_img;
+}
+
+add_post_type_support( 'page', 'excerpt' );
+
+function return_the_excerpt_max_charlength($charlength) {
+		$excerpt = get_the_excerpt();
+		$returnThis = "";
+		if ( mb_strlen( $excerpt ) > $charlength ) {
+			$subex = mb_substr( $excerpt, 0, $charlength - 5 );
+			$exwords = explode( ' ', $subex );
+			$excut = - ( mb_strlen( $exwords[ count( $exwords ) - 1 ] ) );
+			if ( $excut < 0 ) {
+				$subex = substr($subex, 0, -1);
+				$returnThis .= mb_substr( $subex, 0, $excut );
+			} else {
+				$subex = substr($subex, 0, -1);
+				$returnThis .= $subex;
+			}
+			$returnThis .=  '...';
+		} else {
+			$returnThis .= $excerpt;
+		}
+		$returnThis .= '<a href = "'.get_permalink().'">read more</a>';
+		return $returnThis;
+	}
+function custom_excerpt_length( $length ) {
+	return 500;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+
+
 ?>
