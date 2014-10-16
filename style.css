@@ -60,9 +60,11 @@ input:focus {
 	outline:0;
 	border:1px solid #04A4CC;
 }
+
 h1,h2,h3,h4,h5 {
 	line-height: 1.2em;
 }
+
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
@@ -230,8 +232,6 @@ li.logo a:hover {
     PAGES
 \*------------------------------------*/
 
-
-
 /*homepage*/
 .home-featured {
 	height: 478px;
@@ -326,7 +326,6 @@ li.logo a:hover {
 	font-style: italic;
 	margin: 0;
 }
-
 
 /* main */
 
@@ -440,12 +439,37 @@ h1.blog-title {
 	margin-top: 46px;
 }
 
+.item-list {
+	margin-left: -40px;
+}
+
 .item-list li {
 	list-style: none;
 }
 
+.item-list .author-data {
+	margin: -19px 0 5px 0;
+}
+
+.item-list .author {
+	font-family: 'GothamBold', sans-serif;
+	color: #7b7d80;
+	text-transform: uppercase;
+}
+
+.item-list .date {
+	font-size: 13px;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
 .main-item-wrap {
 	max-width: 743px;
+}
+
+.main-item-wrap .img-wrap img {
+	width: 742px;
+	max-height: 296px;
 }
 
 .main-item-wrap .text {
@@ -453,6 +477,12 @@ h1.blog-title {
 	margin-top: 15px;
 	padding-bottom: 27px;
 }
+
+.main-item-wrap .comment-count {
+	font-style: italic;
+	padding-top: 20px;
+}
+
 
 .post-link {
 	display: inline;
@@ -463,6 +493,18 @@ h1.blog-title {
 	font-family: 'GothamBook', sans-serif;
 	font-style: italic;
 	color: #e94d62;
+}
+
+.widget_archive h3 {
+	font-size: 30px;
+	font-family: 'GothamBold', sans-serif;
+	text-transform: uppercase;
+	color: #6e7ea0;
+}
+
+.widget_archive a {
+	font-size: 16px;
+	color: #6e7ea0;
 }
 
 

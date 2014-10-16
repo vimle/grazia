@@ -19,18 +19,20 @@
 			$myposts->the_post(); ?>
 			<li>
 				<a href = "<?php echo post_permalink($post->ID);?>"><h1 class="blog-title"><?php echo $post->post_title; ?></h1></a>
-				<div class = "authorData"><a href = "<?php echo get_author_posts_url($post->post_author); ?>"><span class = "author"><?php echo get_the_author_meta( 'display_name', $post->post_author ); ?></span></a> on <?php echo get_the_time( 'F j, Y', $post->ID ); ?></div>
+				<div class = "author-data">
+					<a href = "<?php echo get_author_posts_url($post->post_author); ?>"><span class = "author"><?php echo get_the_author_meta( 'display_name', $post->post_author ); ?></span></a> <span class="date"><?php echo get_the_time( 'F j, Y', $post->ID ); ?></span>
+				</div>
 				<div class = "main-item-wrap">
-					<div class = "imgWrap">
+					<div class = "img-wrap">
 						<img src = "<?php echo get_first_image_url(); ?>">
 					</div>
 					<div class = "text">
-						<?php echo return_the_excerpt_max_charlength(450);?>
+						<?php echo return_the_excerpt_max_charlength(240);?>
 						<div class="comment-count">
 							<?php commentCount(); ?>
 						</div>
 					</div>
-				<div class = "clear"></div>
+					<div class = "clear"></div>
 				</div>
 
 				<div class = "clear"></div>
