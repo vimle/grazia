@@ -43,9 +43,14 @@
 						<li><img src="http://vimle.com/test/grazia/wp-content/uploads/2014/10/icon-email.png">info@grazia.com</li>
 					</ul>
 					
-					<div class="social-icons">
-					
-					</div>
+					<ul class="social-icons">
+						<li class="fb"><a href="#"></a></li>
+						<li class="twitter"><a href="#"></a></li>
+						<li class="pinterest"><a href="#"></a></li>
+						<li class="instagram"><a href="#"></a></li>
+						<li class="youtube"><a href="#"></a></li>
+					</ul>
+
 			</div>
 			
 			<div style="clear:both"></div>
