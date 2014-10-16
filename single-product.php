@@ -4,22 +4,22 @@
 <script>
 	jQuery(function($) {
 		$('#imageGallery').lightSlider({
-	gallery:true,
-	item:1,
-	slideMove: 1,
-	slideMargin:0,
-	mode: 'fade',
-	thumbMargin:0,
-	currentPagerPosition:'left',
-	thumbItem:3,
-	loop:true
-	});
+		gallery:true,
+		item:1,
+		slideMove: 1,
+		slideMargin:0,
+		mode: 'fade',
+		thumbMargin:0,
+		currentPagerPosition:'left',
+		thumbItem:3,
+		loop:true
+		});
 	})(jQuery);
 </script>
 
 <main role="main">
 	<!-- section -->
-	<section>
+	<section class="wrapper">
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

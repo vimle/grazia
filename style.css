@@ -255,6 +255,8 @@ main h3 {
 .product-title a {
 	color: #6e7ea0;
 	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 1em;
 }
 h1.bold-title {
 	color: #6e7ea0;
