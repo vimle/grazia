@@ -67,6 +67,12 @@
 
 			<div class="inner-content">
 				<h1 class="bold-title">You may also like</h1>
+				<?php $args = array( 'numberposts' => '4', 'orderby' => 'rand', 'post_type' => 'product');
+                    $recent_posts = wp_get_recent_posts( $args );
+                    foreach( $recent_posts as $recent ){
+                        echo '<div class="featured-prj"><a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   get_the_post_thumbnail($recent["ID"], 'product-recent-prev') .'</a></div> ';
+                    } ?>
+                <div class="clear"></div>
 			</div>
 	
 		</article>

@@ -26,12 +26,13 @@ if (function_exists('add_theme_support'))
 
     // Add Thumbnail Theme Support
     add_theme_support('post-thumbnails');
-    add_image_size('large', 700, '', true); // Large Thumbnail
+    add_image_size('large', 742, 296, true); // Large Thumbnail
     add_image_size('medium', 250, '', true); // Medium Thumbnail
     add_image_size('small', 120, '', true); // Small Thumbnail
     add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
     add_image_size('product-preview', 550, 345, true);
     add_image_size('product-thumb', 181, 112, true);
+    add_image_size('product-recent-prev', 220, 186, true);
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     /*add_theme_support('custom-background', array(
@@ -421,6 +422,7 @@ function create_post_type_html5()
         'supports' => array(
             'title',
             'editor',
+            'thumbnail',
         ), // Go to Dashboard Custom HTML5 Blank post for supports
         'can_export' => true, // Allows export in Tools > Export
     ));
