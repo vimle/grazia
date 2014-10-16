@@ -334,6 +334,8 @@ h1.bold-title {
 
 h1.blog-title {
 	font-size: 30px;
+	font-weight: normal;
+	text-transform: uppercase;
 	color: #6e7ea0;
 	margin-top: 46px;
 }
