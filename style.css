@@ -230,7 +230,7 @@ li.logo a:hover {
 
 /* main */
 
-main h1 {
+main h1.page-title {
 	font-size: 70px;
 	font-family: 'GothamBook', sans-serif;
 	font-weight: normal;
