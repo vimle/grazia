@@ -205,7 +205,7 @@ li.logo a:hover {
 
 /* sidebar */
 .sidebar {
-	display: none;
+	*display: none;
 }
 /* footer */
 .footer {
@@ -429,6 +429,31 @@ h1.bold-title {
 	color: #fff;
 	box-shadow: 0 0 30px 0 #605C5C;
 }
+
+/* blog */
+
+h1.blog-title {
+	font-size: 30px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #6e7ea0;
+	margin-top: 46px;
+}
+
+.item-list li {
+	list-style: none;
+}
+
+.main-item-wrap {
+	max-width: 743px;
+}
+
+.main-item-wrap .text {
+	border-bottom: 1px #7b7d80 solid;
+	margin-top: 15px;
+	padding-bottom: 27px;
+}
+
 
 /* contact form */
 
