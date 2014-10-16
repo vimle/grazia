@@ -28,16 +28,6 @@
 			<!-- header -->
 			<header class="header clear" role="banner">
 				<div class="wrapper">
-				<?php /*
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
-						</a>
-					</div>
-					<!-- /logo -->
-					*/ ?>
-
 					<!-- nav -->
 					<nav class="nav" role="navigation">
 						<?php html5blank_nav(); ?>
@@ -45,14 +35,4 @@
 					<!-- /nav -->
 				</div>
 			</header>
-
-			<style>
-				li.logo {
-					width: 115px;
-					position: relative;
-				}
-				li.logo:before {
-					width: 115px;
-				}
-			</style>
 			<!-- /header -->

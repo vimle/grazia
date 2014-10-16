@@ -103,61 +103,103 @@ input:focus {
 /* header */
 .header {
 	background: #e94d62;
+	border-bottom: 1px solid #fff;
 }
-/* logo */
-.logo {
-	position: absolute;
-	left: 40%;
-	right: 40%;
-}
-.logo-img {
 
-}
+
 /* nav */
-.nav {
-
+li.logo {
+	width: 163px;
+	position: relative;
 }
-
-.nav ul {
-	margin: 0 auto;
-}
-
-.nav li {
-	list-style: none;
-	padding: 15px 25px;
-	margin: 0 auto;
-	float: left;
-	color: #ffffff;
-}
-
-.nav li:hover, .nav li a:hover {
-	background: #ffffff;
-	color: #e94d62;
-	border-radius: 5px;
-}
-
-.nav li ul{
-	z-index: 9999;
+li.logo a {
+	background: url(img/logo.png) no-repeat;
+	height: 79px;
+	width: 163px;
 	position: absolute;
-	left: -999em;
-	height: auto;
-	width: 160px;
-	padding: 16px 0 0;
-	margin: 30px 0 0 0px;
-	background: #e94d62;
-	text-align: left;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 0;
+	z-index: 10;
 }
-
-.nav li:hover ul {
-	left: auto;
+li.logo a:hover {
+	background: url(img/logo.png) no-repeat;
 }
-
-.nav li a, .nav li ul a {
-	font-size: 14px;
-	font-family: 'GothamBold', sans-serif;
-	color: #ffffff;
+.nav {
 	text-transform: uppercase;
 }
+.nav ul {
+	margin: 0 auto;
+	display: table;
+}
+.nav li {
+	list-style: none;
+	color: #fff;
+	display: table-cell;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav a {
+	font-size: 14px;
+	font-family: 'GothamBold', sans-serif;
+	color: #fff;
+	padding: 4px 12px;
+	border-radius: 5px;
+}
+.nav a:hover {
+	background: #ffffff;
+	color: #e94d62;
+	-webkit-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+.nav a:hover + ul {
+	opacity: 1;
+	visibility: visible;
+}
+.nav li ul:before {
+	content: "";
+	display: block;
+	width: 120px;
+	height: 10px;
+	background: #e94d62;
+	position: absolute;
+	top: -11px;
+	border-bottom: 1px solid #fff;
+}
+.nav li ul {
+	z-index: 20;
+	position: absolute;
+	left: 9px;
+	top: 46px;
+	width: 440px;
+	padding: 10px;
+	margin: 0;
+	background: #e94d62;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+.nav li ul:hover {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+.nav li ul li {
+	display: block;
+	padding: 0;
+	margin-bottom: 10px;
+}
+.nav li ul li:last-child {
+	margin-bottom: 0;
+}
+.nav li ul li a {
+	margin: 0;
+}
+
 
 /* sidebar */
 .sidebar {
