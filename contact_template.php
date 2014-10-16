@@ -38,15 +38,15 @@
 			<div class="cf-left-sidebar">
 				<h2>GRAZIA HEADQUARTERS</h2>
 					<ul class="contact">
-						<li class="location">8605 SANTA MONICA BLVD, UNIT 18030, LOS ANGELES, CA 90069, USA</li>
-						<li class="phone">123.236.3214</li>
-						<li class="email">INFO@GRAZIA-PRODUCTS.COM</li>
-						
+						<li class="location"><span>8605 SANTA MONICA BLVD, UNIT 18030, LOS ANGELES, CA 90069, USA</span></li>
+						<li class="phone"><span>123.236.3214</span></li>
+						<li class="email"><span>INFO@GRAZIA-PRODUCTS.COM</span></li>
+					</ul>
+					
 					<!--<li><img src="http://vimle.com/test/grazia/wp-content/uploads/2014/10/icon-location.png">8605 Santa Monica Blvd, Unit 18030, Los Angeles, CA 90069, USA</li>
 						<li><img src="http://vimle.com/test/grazia/wp-content/uploads/2014/10/icon-phone.png">123.236.3214</li>
 						<li><img src="http://vimle.com/test/grazia/wp-content/uploads/2014/10/icon-email.png">info@grazia.com</li> -->
-					</ul>
-					
+
 					<ul class="social-icons">
 						<li class="fb"><a href="#"></a></li>
 						<li class="twitter"><a href="#"></a></li>
