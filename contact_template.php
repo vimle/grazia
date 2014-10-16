@@ -42,17 +42,13 @@
 						<li class="phone"><span>123.236.3214</span></li>
 						<li class="email"><span>INFO@GRAZIA-PRODUCTS.COM</span></li>
 					</ul>
-					
-					<!--<li><img src="http://vimle.com/test/grazia/wp-content/uploads/2014/10/icon-location.png">8605 Santa Monica Blvd, Unit 18030, Los Angeles, CA 90069, USA</li>
-						<li><img src="http://vimle.com/test/grazia/wp-content/uploads/2014/10/icon-phone.png">123.236.3214</li>
-						<li><img src="http://vimle.com/test/grazia/wp-content/uploads/2014/10/icon-email.png">info@grazia.com</li> -->
 
 					<ul class="social-icons">
-						<li class="fb"><a href="#"></a></li>
-						<li class="twitter"><a href="#"></a></li>
-						<li class="pinterest"><a href="#"></a></li>
+						<li class="fb"><a href="https://www.facebook.com/GraziaProducts" target="_blank"></a></li>
+						<li class="twitter"><a href="https://twitter.com/GraziaProducts" target="_blank"></a></li>
+						<li class="pinterest"><a href="http://www.pinterest.com/graziaproducts/" target="_blank"></a></li>
 						<li class="instagram"><a href="#"></a></li>
-						<li class="youtube"><a href="#"></a></li>
+						<li class="youtube"><a href="https://www.youtube.com/channel/UCaXGbTCTAKzrVdHbtEkGfeQ" target="_blank"></a></li>
 					</ul>
 
 			</div>

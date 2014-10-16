@@ -374,6 +374,7 @@ span.wpcf7-form-control-wrap textarea {
 
 .cf-left-sidebar {
 	max-width: 250px;
+	margin-left: 32px;
 	display: inline-block;
 }
 
@@ -406,7 +407,9 @@ span.wpcf7-form-control-wrap textarea {
 
 .cf-left-sidebar .contact span {
 	font-size: 13px;
-	margin-left: 20px;
+	margin-left: 45px;
+	position: absolute;
+	width: 250px;
 }
 
 .cf-left-sidebar .contact li, .cf-left-sidebar .contact a {
@@ -428,14 +431,16 @@ span.wpcf7-form-control-wrap textarea {
 }
 
 .cf-left-sidebar .contact .email{
-	top: 50px;
+	top: 60px;
 	left: 0px;
-    width: 39px;
-    background: url('http://vimle.com/test/grazia/wp-content/uploads/2014/10/icons-sprite-1.png') 0 -132px;
+	width: 39px;
+	height: 29px;
+	background: url('http://vimle.com/test/grazia/wp-content/uploads/2014/10/icons-sprite-1.png') 0 -145px;
 }
 
 .cf-left-sidebar .social-icons {
-	margin-top: 82px;
+	position: relative;
+	top: 78px;
 }
 
 .cf-left-sidebar .social-icons li{
