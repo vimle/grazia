@@ -329,7 +329,8 @@ span.wpcf7-form-control-wrap textarea {
 }
 
 .cf-left-sidebar {
-	
+	max-width: 250px;
+	display: inline-block;
 }
 
 .cf-left-sidebar li {
@@ -348,9 +349,55 @@ span.wpcf7-form-control-wrap textarea {
 }
 
 .cf-left-sidebar .social-icons {
-	width: 31px;
-	background: (../../uploads/2014/10/icon-sprite.png)
+	
 }
+
+.cf-left-sidebar .social-icons li{
+	margin: 0;
+    padding: 0;
+    list-style: none;
+	position: relative;
+}
+
+.cf-left-sidebar .social-icons li, .cf-left-sidebar .social-icons a {
+    height: 32px;
+    display: block;
+}
+
+.cf-left-sidebar .social-icons .fb {
+    left: 0px;
+    width: 31px;
+    background: url('http://vimle.com/test/grazia/wp-content/uploads/2014/10/icons-sprite.png') 0 0;
+}
+
+.cf-left-sidebar .social-icons .twitter {
+    left: 37px;
+	top: -31px;
+	width: 32px;
+	background: url('http://vimle.com/test/grazia/wp-content/uploads/2014/10/icons-sprite.png') -38px 0;
+}
+
+.cf-left-sidebar .social-icons .pinterest {
+	left: 75px;
+	top: -63px;
+	width: 32px;
+	background: url('http://vimle.com/test/grazia/wp-content/uploads/2014/10/icons-sprite.png') -77px 0;
+}
+
+.cf-left-sidebar .social-icons .instagram {
+	left: 108px;
+	top: -95px;
+	width: 33px;
+	background: url('http://vimle.com/test/grazia/wp-content/uploads/2014/10/icons-sprite.png') -112px 0;
+}
+
+.cf-left-sidebar .social-icons .youtube {
+	left: 145px;
+	top: -127px;
+	width: 33px;
+	background: url('http://vimle.com/test/grazia/wp-content/uploads/2014/10/icons-sprite.png') -151px 0;
+}
+
 
 
 /*------------------------------------*\
