@@ -28,9 +28,12 @@
 							<img src = "<?php echo get_first_image_url(); ?>">
 						</div>
 						<div class = "text">
-							<?php echo return_the_excerpt_max_charlength(240);?>
+							<?php echo return_the_excerpt_max_charlength(230);?>
 							<div class="comment-count">
 								<?php commentCount(); ?>
+							</div>
+							<div class="share-social">
+								<?php do_quickshare_output( $url, $title, $source, $description, $imgurl ); ?>
 							</div>
 						</div>
 						<div class = "clear"></div>
