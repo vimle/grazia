@@ -14,31 +14,31 @@
 	$myposts = new WP_Query( $args );		
 ?>
 <div class="wrapper">
-	<ul class = "item-list">
-		<?php while ( $myposts->have_posts() ) {
-			$myposts->the_post(); ?>
-			<li>
-				<a href = "<?php echo post_permalink($post->ID);?>"><h1 class="blog-title"><?php echo $post->post_title; ?></h1></a>
-				<div class = "author-data">
-					<a href = "<?php echo get_author_posts_url($post->post_author); ?>"><span class = "author"><?php echo get_the_author_meta( 'display_name', $post->post_author ); ?></span></a> <span class="date"><?php echo get_the_time( 'F j, Y', $post->ID ); ?></span>
-				</div>
-				<div class = "main-item-wrap">
-					<div class = "img-wrap">
-						<img src = "<?php echo get_first_image_url(); ?>">
+	<div class="item-list">
+		<ul>
+			<?php while ( $myposts->have_posts() ) {
+				$myposts->the_post(); ?>
+				<li>
+					<a href = "<?php echo post_permalink($post->ID);?>"><h1 class="blog-title"><?php echo $post->post_title; ?></h1></a>
+					<div class = "author-data">
+						<a href = "<?php echo get_author_posts_url($post->post_author); ?>"><span class = "author"><?php echo get_the_author_meta( 'display_name', $post->post_author ); ?></span></a> <span class="date"><?php echo get_the_time( 'F j, Y', $post->ID ); ?></span>
 					</div>
-					<div class = "text">
-						<?php echo return_the_excerpt_max_charlength(240);?>
-						<div class="comment-count">
-							<?php commentCount(); ?>
+					<div class = "main-item-wrap">
+						<div class = "img-wrap">
+							<img src = "<?php echo get_first_image_url(); ?>">
 						</div>
+						<div class = "text">
+							<?php echo return_the_excerpt_max_charlength(240);?>
+							<div class="comment-count">
+								<?php commentCount(); ?>
+							</div>
+						</div>
+						<div class = "clear"></div>
 					</div>
-					<div class = "clear"></div>
-				</div>
-
-				<div class = "clear"></div>
-			</li>
-		<?php } ?>
-	</ul>
+				</li>
+			<?php } ?>
+		</ul>
+	</div>
 	<center>
 		<div class = "pageLinks">
 			<?php
@@ -55,6 +55,10 @@
 			?>
 		</div>
 	</center>
+	
+	<?php get_sidebar(); ?>
 </div>
-<?php get_sidebar(); ?>
+
+<div class = "clear"></div>
+
 <?php get_footer(); ?>
