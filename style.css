@@ -204,11 +204,114 @@ li.logo a:hover {
 	margin: 0;
 }
 
+/* comments */
+.comments {
+	
+}
+
+.comments ul li {
+	list-style: none;
+}
+
+
+
+/* search form */
+.search {
+	
+}
+
+.search-input {
+	background: #d8d8d8;
+	border: #c9c9c9 2px solid;
+	border-radius: 5px;
+	font-size: 14px;
+	width: 180px;
+	padding: 6px 0px 6px 22px;
+}
+
+form.form-search {
+    position: relative;
+}
+
+form.form-search:before {
+    content:'';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url(http://getbootstrap.com/2.3.2/assets/img/glyphicons-halflings.png);
+    background-position: -48px 0;
+    position: absolute;
+    top:8px;
+    left:8px;
+    opacity: .5;
+    z-index: 1000;
+}
+
+.search-submit {
+	visibility: hidden;
+}
+
 
 /* sidebar */
+
 .sidebar {
-	display: none;
+	max-width: 250px;
+	display: inline-block;
+	margin: 46px 0 0 12px;
 }
+
+.sidebar-widget h3 {
+	font-size: 30px;
+	font-family: 'GothamBold', sans-serif;
+	text-transform: uppercase;
+	color: #6e7ea0;
+}
+
+.sidebar-widget ul, .sidebar-widget .tagcloud  {
+	margin-top: -1.1em;
+}
+
+.sidebar-widget ul {
+	margin-left: -1.1em;
+}
+
+.sidebar-widget ul li {
+	list-style-type: none;
+}
+
+.sidebar-widget ul > li:before {
+    content: "-"; 
+    position: absolute;
+    margin-left: -1.1em; 
+	color: #6e7ea0;
+}
+
+.sidebar-widget a {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #6e7ea0;
+}
+
+.sidebar-widget .tagcloud {
+	margin-left: 1.0em;
+}
+
+.sidebar-widget .tagcloud a {
+	font-size: 16px;
+	display: block;
+}
+
+.sidebar-widget .tagcloud a:before {
+	content: "-";
+	position: absolute;
+	margin-left: -1.1em;
+	color: #6e7ea0;
+}
+
+.widget_archive, .widget_tag_cloud {
+	margin-top: -25px;
+}
+
 /* footer */
 .footer {
 	background: url('img/footer-bg.png');
@@ -548,6 +651,7 @@ h1.blog-title , .blog-title a{
 
 .item-list {
 	margin-left: -40px;
+	float: left;
 }
 
 .item-list li {
@@ -600,18 +704,6 @@ h1.blog-title , .blog-title a{
 	font-family: 'GothamBook', sans-serif;
 	font-style: italic;
 	color: #e94d62;
-}
-
-.widget_archive h3 {
-	font-size: 30px;
-	font-family: 'GothamBold', sans-serif;
-	text-transform: uppercase;
-	color: #6e7ea0;
-}
-
-.widget_archive a {
-	font-size: 16px;
-	color: #6e7ea0;
 }
 
 
