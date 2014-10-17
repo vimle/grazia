@@ -21,10 +21,14 @@
 
 
 		// Newsletter
-		SubcribeModal.fadeIn(300);
+		$( document ).ready(function() {
+			SubcribeModal.fadeIn(300);
+			console.log('tea');
+		});
+
 		$('a.close-newsletter').on('click', function() {
 			SubcribeModal.fadeOut(300);
-		})
+		});
 		
 	});
 	
