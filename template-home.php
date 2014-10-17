@@ -15,7 +15,7 @@
 	<section class="home-story wrapper clear">
 		<div class="column-6">
 			<h1>Our Story</h1>
-			<p>When quality ingredients and thoughtful preparation are combined, food offers us an opportunity to share.<a href="" class="home-readmore">Read More</a></p>
+			<p>When quality ingredients and thoughtful preparation are combined, food offers us an opportunity to share.<a href="our-story" class="home-readmore">Read More</a></p>
 			
 		</div>
 		<div class="column-6">
@@ -30,15 +30,15 @@
 		<div class="clear">
 			<div class="column-4">
 				<h2>Cake/Muffin Pans</h2>
-				<img src="" alt="">
+				<img src="//lorempixel.com/296/240/food" alt="Sample Text">
 			</div>
 			<div class="column-4">
 				<h2>Gift Sets</h2>
-				<img src="" alt="">
+				<img src="//lorempixel.com/296/240/food" alt="Sample Text">
 			</div>
 			<div class="column-4">
 				<h2>Popsicles</h2>
-				<img src="" alt="">
+				<img src="//lorempixel.com/296/240/food" alt="Sample Text">
 			</div>
 		</div>
 	</section>

@@ -347,6 +347,22 @@ li.logo a:hover {
 	font: 34px "MrDafoe", sans-serif normal;
 
 }
+
+body.home.page .wrapper {
+	width: 934px;
+}
+.home-shop h2 {
+	text-transform: uppercase;
+font-size: 24px;
+margin: 10px 0;
+}
+.home-shop .column-4 {
+	padding: 0 15px;
+}
+.home-shop .clear {
+	margin: 0 -15px;
+}
+
 /* main */
 
 main h1.page-title {
@@ -744,22 +760,43 @@ span.wpcf7-form-control-wrap textarea {
     RESPONSIVE
 \*------------------------------------*/
 
-@media only screen and (min-width:320px) {
+
+@media only screen and (max-width:1600px) {
+	.home-featured {
+		height: 400px;
+	}
+	.img-tray {
+		max-width: 412px;
+	}
+}
+@media only screen and (max-width:1280px) {
+	.home-featured {
+		height: 300px;
+	}
+	.img-tray {
+		max-width: 332px;
+		left: -60px;
+	}
+}
+@media only screen and (max-width:1140px) {
+	.home-featured {
+		height: 160px;
+	}
+	.img-tray {
+		max-width: 212px;
+		left: -60px;
+	}
+}
+@media only screen and (max-width:1024px) {
 
 }
-@media only screen and (min-width:480px) {
+@media only screen and (max-width:768px) {
 
 }
-@media only screen and (min-width:768px) {
+@media only screen and (max-width:480px) {
 
 }
-@media only screen and (min-width:1024px) {
-
-}
-@media only screen and (min-width:1140px) {
-
-}
-@media only screen and (min-width:1280px) {
+@media only screen and (max-width:320px) {
 
 }
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),
