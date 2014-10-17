@@ -348,6 +348,77 @@ li.logo a:hover {
 
 }
 
+/*newsletter*/
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(255, 255, 255, 0.52);
+	z-index: 999;
+}
+.newsletter {
+	background: #e43d54;
+	max-width: 800px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 350px;
+	margin: auto;
+	padding: 60px;
+	color: #fff;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.newsletter h1 {
+	text-transform: uppercase;
+	font: 60px "GothamBold" normal;
+	letter-spacing: -4px;
+	line-height: 54px;
+	margin: 0 0 16px;
+}
+.newsletter p {
+	line-height: 20px;
+	font-size: 16px;
+}
+.newsletter-email {
+	font-size: 26px;
+	padding: 6px 20px;
+	border: none;
+	background: #f47788;
+	outline: none;
+	border-radius: 4px;
+	color: #f9bdc4;
+	width: 100%;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.close-newsletter {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	width: 20px;
+	height: 20px;
+	background: url(img/close-newsletter.png) no-repeat;
+}
+.newsletter-submit {
+	background: #841524;
+	border: none;
+	color: #fff;
+	padding: 6px 14px;
+	border-radius: 4px;
+	font-size: 26px;
+	text-transform: uppercase;
+	font-weight: 700;
+	float: right;
+}
 body.home.page .wrapper {
 	width: 934px;
 }

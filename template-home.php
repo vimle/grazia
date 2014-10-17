@@ -53,6 +53,49 @@
 
 
 
+	
+	<section class="modal">
+		<script type="text/javascript">
+			//<![CDATA[
+			if (typeof newsletter_check !== "function") {
+				window.newsletter_check = function (f) {
+				    var re = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-]{1,})+\.)+([a-zA-Z0-9]{2,})+$/;
+				    if (!re.test(f.elements["ne"].value)) {
+				        alert("The email is not correct");
+				        return false;
+				    }
+				    if (f.elements["ny"] && !f.elements["ny"].checked) {
+				        alert("You must accept the privacy statement");
+				        return false;
+				    }
+				    return true;
+				}
+			}
+			//]]>
+		</script>
+		<div class="newsletter newsletter-subscription">
+			<a href="#" class="close-newsletter"></a>
+			<form method="post" action="http://vimle.com/test/grazia/wp-content/plugins/newsletter/do/subscribe.php" onsubmit="return newsletter_check(this)">
+
+				<h1>Sign up for our newsletter</h1>
+				<p><b>Stay up to date with out latest products and offers.</b><br>Privacy policy: We hate spam and promise to keep your email address safe.</p>
+				<div class="clear">
+					<div class="column-9">
+						<input class="newsletter-email" type="email" name="ne" size="30" placeholder="EMAIL" required>
+					</div>
+					<div class="column-3">
+						<input class="newsletter-submit" type="submit" value="Submit"/>
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</section>
+	<!-- /news-letter -->
+
+
+
+
 	<?php /*
 	<!-- section -->
 		<section>
