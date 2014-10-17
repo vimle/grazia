@@ -265,10 +265,7 @@ form.form-search:before {
 	font-family: 'GothamBold', sans-serif;
 	text-transform: uppercase;
 	color: #6e7ea0;
-}
-
-.sidebar-widget ul, .sidebar-widget .tagcloud  {
-	margin-top: -1.1em;
+	margin-bottom: 10px;
 }
 
 .sidebar-widget ul {
@@ -279,12 +276,12 @@ form.form-search:before {
 	list-style-type: none;
 }
 
-.sidebar-widget ul > li:before {
+/*.sidebar-widget ul > li:before {
     content: "-"; 
     position: absolute;
     margin-left: -1.1em; 
 	color: #6e7ea0;
-}
+} */
 
 .sidebar-widget a {
 	font-size: 16px;
