@@ -48,6 +48,10 @@
 
 	<section class="home-social wrapper">
 		<h1>Social Media</h1>
+		<?php
+			if (function_exists('social_media_mashup'))
+				social_media_mashup(5);
+			?>
 	</section>
 	<!-- /home-social -->
 

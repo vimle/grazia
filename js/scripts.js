@@ -21,14 +21,36 @@
 
 
 		// Newsletter
-		$( document ).ready(function() {
-			SubcribeModal.fadeIn(300);
-			console.log('tea');
-		});
-
+		SubcribeModal.fadeIn(300);
 		$('a.close-newsletter').on('click', function() {
 			SubcribeModal.fadeOut(300);
 		});
+
+		/*
+		function openFancybox() {
+		    setTimeout(function () {
+		        $('#yt').trigger('click');
+		    }, 500);
+		};
+		$(document).ready(function () {
+		    var visited = $.cookie('visited');
+		    if (visited == 'yes') {
+		        return false; // second page load, cookie active
+		    } else {
+		        openFancybox(); // first page load, launch fancybox
+		    }
+		    $.cookie('visited', 'yes', {
+		        expires: 7 // the number of days cookie  will be effective
+		    });
+		    $("#yt").click(function () {
+		        $.fancybox({
+		            href: this.href,
+		            type: "image"
+		        });
+		        return false;
+		    });
+		});
+*/
 		
 	});
 	
