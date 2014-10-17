@@ -50,7 +50,7 @@
 		<h1>Social Media</h1>
 		<?php
 			if (function_exists('social_media_mashup'))
-				social_media_mashup(5);
+				social_media_mashup(12);
 			?>
 	</section>
 	<!-- /home-social -->
