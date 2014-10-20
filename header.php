@@ -37,3 +37,10 @@
 				</div>
 			</header>
 			<!-- /header -->
+			<ul class="header-social-icons">
+				<li class="fb"><a href="https://www.facebook.com/GraziaProducts" target="_blank"></a></li>
+				<li class="twitter"><a href="https://twitter.com/GraziaProducts" target="_blank"></a></li>
+				<li class="pinterest"><a href="http://www.pinterest.com/graziaproducts/" target="_blank"></a></li>
+				<li class="instagram"><a href="#" target="_blank"></a></li>
+				<li class="youtube"><a href="https://www.youtube.com/channel/UCaXGbTCTAKzrVdHbtEkGfeQ" target="_blank"></a></li>
+			</ul>

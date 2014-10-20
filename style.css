@@ -112,6 +112,66 @@ a[style] { font-size: 12pt !important; }
 	border-bottom: 1px solid #fff;
 }
 
+.header-social-icons {
+	position: absolute;
+	top: -1.5%;
+	right: 8%;
+}
+
+.header-social-icons li{
+	margin: 0;
+    padding: 0;
+    list-style: none;
+	position: relative;
+}
+
+.header-social-icons li, .header-social-icons a {
+    height: 32px;
+    display: block;
+	filter: url(filters.svg#grayscale);
+	filter: gray;
+	-webkit-filter: grayscale(1);
+}
+
+.header-social-icons li:hover, .header-social-icons a:hover {
+	filter: url(filters.svg#grayscale);
+	filter: gray;
+	-webkit-filter: grayscale(0);
+}
+
+.header-social-icons .fb {
+    left: 0px;
+	width: 23px;
+	background: url('img/sprite.png') 0px -126px;
+}
+
+.header-social-icons .twitter {
+	top: -32px;
+	left: 28px;
+	width: 23px;
+	background: url('img/sprite.png') -28px -126px;
+}
+
+.header-social-icons .pinterest {
+	top: -64px;
+	left: 53px;
+	width: 23px;
+	background: url('img/sprite.png') -53px -126px;
+}
+
+.header-social-icons .instagram {
+	top: -97px;
+	left: 77px;
+	width: 23px;
+	background: url('img/sprite.png') -78px -125px;
+}
+
+.header-social-icons .youtube {
+	top: -128px;
+	left: 103px;
+	width: 23px;
+	background: url('img/sprite.png') -273px -126px;
+}
 
 /* nav */
 li.logo {
