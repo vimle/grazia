@@ -11,7 +11,6 @@ jQuery(function($) {
 		productReview : $('.product-review'),
 		feedWrap : $('.smm-item'),
 		feedMeta : $('.entry-meta'),
-		visited : $.cookie("visited"),
     	newsCloseBtn : $('a.close-newsletter'),
     	revCloseBtn : $('<a href="#" class="close-review"></a>'),
     	writeRev : $('.write-review'),
@@ -49,15 +48,29 @@ jQuery(function($) {
 
 		// Newsletter
         newsLetter : function() {
+   //      	var date = new Date(),
+   //      		minutes = 1,
+			// 	visited = $.cookie("visited");
 
-	        if (gz.visited == null) {
-	            gz.subcribeModal.fadeIn(300);
-	            $.cookie('visited', 'yes');     
-	        }
 
-	        $.cookie('visited', 'yes', { expires: 1, path: '/' });
+			// date.setTime(date.getTime() + (minutes * 60 * 1000));
+			// // $.cookie('the_cookie', 'the_value', { expires: date });
 
-	        gz.newsCloseBtn.on('click', function() {
+	  //       if (visited == null) {
+	  //           gz.subcribeModal.fadeIn(300);
+	  //           $.cookie('visited', 'yes');
+	  //           console.log('cookie start'); 
+	  //       }
+
+	  //       $.cookie('visited', 'yes', { expires: date, path: '/' });
+
+	        
+			setTimeout(function() {
+			  console.log("Your session will expire in 30 seconds!");
+			  gz.subcribeModal.fadeIn(300);
+			}, 10000);
+
+			gz.newsCloseBtn.on('click', function() {
 				gz.subcribeModal.fadeOut(300);
 			});
 		},
