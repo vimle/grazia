@@ -582,6 +582,9 @@ form.form-search:before {
 	z-index: 1;
 	opacity: .4;
 }
+.social-media-mashup .smm-item img {
+	color: #D99E9E;
+}
 .social-media-mashup .smm-item p.entry-meta {
 	position: absolute;
 	top: 10px;
@@ -774,7 +777,7 @@ h1.bold-title {
 }
 .product-review form {
 	width: 460px;
-	height: 330px;
+	height: 400px;
 	background: #fff;
 	padding: 40px 20px;
 	position: absolute;
@@ -783,19 +786,14 @@ h1.bold-title {
 	right: 0;
 	bottom: 0;
 	margin: auto;
-	border-radius: 10px;
 }
 .close-review {
-	background: #fff url(img/sprite.png) -3px -159px no-repeat
+	background: url(img/sprite.png) -25px -159px no-repeat;
+	top: 4px;
+	right: 4px;
+	width: 22px;
+	height: 22px;
 	position: absolute;
-	top: -18px;
-	right: -19px;
-	width: 40px;
-	height: 40px;
-	border-radius: 100%;
-	box-shadow: 0 0 20px 0 #6D6D6D;
-	color: #fff;
-	box-shadow: 0 0 30px 0 #605C5C;
 }
 
 /* blog */
