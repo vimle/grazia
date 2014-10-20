@@ -1,53 +1,82 @@
-(function ($, root, undefined) {
-	
-	$(function () {
-		
-		'use strict';
+jQuery(function($) {
+	'use strict';
 
-		var SubcribeModal = $('.modal'),
-			ProductReview = $('.product-review');
+	var gz = {
 
-		$('<a href="#" class="close-review"></a>').appendTo('.rr_review_form');
-		
-		$('.write-review').on('click',function(e) {
-			e.preventDefault();
-			ProductReview.fadeIn(300);
-		});
+		/*-----------------------------------------------------
+		    Variables
+		-----------------------------------------------------*/
 
-		$('.close-review').on('click', function(e) {
-			e.preventDefault()
-			ProductReview.fadeOut(300);
-		});
+		subcribeModal : $('.modal'),
+		productReview : $('.product-review'),
+		feedWrap : $('.smm-item'),
+		feedMeta : $('.entry-meta'),
+		visited : $.cookie("visited"),
+    	newsCloseBtn : $('a.close-newsletter'),
+    	revCloseBtn : $('<a href="#" class="close-review"></a>'),
+    	writeRev : $('.write-review'),
+    	closeRev : $('.close-review'),
 
 
+		/*-----------------------------------------------------
+			Init
+		-----------------------------------------------------*/
+
+		init : function() {
+			gz.socialFeed();
+			gz.newsLetter();
+			gz.prodctRev();
+		},
+
+
+		/*-----------------------------------------------------
+		    Functions
+		-----------------------------------------------------*/
 
 		// Social Feed
-		$('.smm-item').find('img:first').attr('src');
-		$('.smm-item').each(function() {
-			var thisImg = $(this),
-				imgUrl = thisImg.find('img:first');
+		socialFeed : function() {
+			gz.feedWrap.each(function() {
+				var thisImg = $(this),
+					imgUrl = thisImg.find('img:first');
 
-			thisImg.append(imgUrl);
-		});
+				thisImg.append(imgUrl);
+			});
 
-
+			gz.feedMeta.text(function () {
+		        return $(this).text('Grazia Products');
+		    });
+		},
 
 		// Newsletter
-        var visited = $.cookie("visited"),
-        	newsCloseBtn = $('a.close-newsletter');
+        newsLetter : function() {
 
-        if (visited == null) {
-            SubcribeModal.fadeIn(300);
-            $.cookie('visited', 'yes');     
-        }
+	        if (gz.visited == null) {
+	            gz.subcribeModal.fadeIn(300);
+	            $.cookie('visited', 'yes');     
+	        }
 
-        $.cookie('visited', 'yes', { expires: 1, path: '/' });
+	        $.cookie('visited', 'yes', { expires: 1, path: '/' });
 
-        newsCloseBtn.on('click', function() {
-			SubcribeModal.fadeOut(300);
-		});
+	        gz.newsCloseBtn.on('click', function() {
+				gz.subcribeModal.fadeOut(300);
+			});
+		},
 
-		
-	});
-	
-})(jQuery, this);
+		// Product Review
+		prodctRev : function() {
+			gz.revCloseBtn.appendTo('.rr_review_form');
+			gz.writeRev.on('click',function(e) {
+				e.preventDefault();
+				gz.productReview.fadeIn(300);
+			});
+
+			gz.closeRev.on('click', function(e) {
+				e.preventDefault()
+				gz.productReview.fadeOut(300);
+			});
+
+		}
+	};
+
+	gz.init();
+});
