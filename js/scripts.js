@@ -42,9 +42,9 @@ jQuery(function($) {
 				thisImg.append(imgUrl);
 			});
 
-			gz.feedMeta.text(function () {
-		        return $(this).text('Grazia Products');
-		    });
+			// gz.feedMeta.text(function() {
+			//    return $(this).text().replace("Grazia Products's Facebook Wall |", "Grazia Products"); 
+		    // });
 		},
 
 		// Newsletter
