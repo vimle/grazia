@@ -130,7 +130,7 @@ li.logo a {
 	z-index: 10;
 }
 li.logo a:hover {
-	background: url(img/logo.png) no-repeat;
+	background: url(img/sprite.png) -3px -3px no-repeat;
 }
 .nav {
 	text-transform: uppercase;
@@ -522,9 +522,10 @@ form.form-search:before {
 	top: 10px;
 	font-size: 16px;
 	height: 40px;
-	width: 155px;
+	width: 100%;
+	padding: 0 10px 0 65px;
 	box-sizing: border-box;
-	left: 47px;
+	left: 0;
 	word-wrap: break-word;
 }
 
@@ -532,12 +533,10 @@ form.form-search:before {
 	content: '';
 	display: block;
 	position: absolute;
-	width: 32px;
-	height: 32px;
-	background: url(http://vimle.com/test/grazia/wp-content/uploads/2014/10/icons-sprite.png);
-	background-position: 32px -1px;
-	left: -38px;
-	-webkit-filter: grayscale(1);
+	width: 37px;
+	height: 37px;
+	background: url(img/sprite.png) -41px -90px no-repeat;
+	left: 15px;
 }
 .social-media-mashup .smm-item .entry-meta .sep {
 	display: none;
