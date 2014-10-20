@@ -38,8 +38,7 @@
 
         if (visited == null) {
             SubcribeModal.fadeIn(300);
-            $.cookie('visited', 'yes'); 
-            alert($.cookie("visited"));         
+            $.cookie('visited', 'yes');     
         }
 
         $.cookie('visited', 'yes', { expires: 1, path: '/' });
