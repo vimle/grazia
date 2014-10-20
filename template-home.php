@@ -47,7 +47,13 @@
 
 
 	<section class="home-social wrapper">
-		<h1>Social Media</h1>
+		<h1><span>Social Media</span></h1>
+		<ul class="home-social-icons">
+			<li class="fb"><a href="https://www.facebook.com/GraziaProducts" target="_blank"></a></li>
+			<li class="twitter"><a href="https://twitter.com/GraziaProducts" target="_blank"></a></li>
+			<li class="pinterest"><a href="http://www.pinterest.com/graziaproducts/" target="_blank"></a></li>
+			<li class="instagram"><a href="#"></a></li>
+		</ul>
 		<?php
 			if (function_exists('social_media_mashup'))
 				social_media_mashup(12);
