@@ -50,7 +50,12 @@
 					</div>
 					<div class="product-bullets column-5">
 						<?php the_content(); // Dynamic Content ?>
-						<img src="<?php echo bloginfo('template_url'); ?>/img/but_amaz.png" alt="Buy from Amazon">
+
+						<a href="<?php the_field('amazon_link'); ?>">
+							<img src="<?php echo bloginfo('template_url'); ?>/img/but_amaz.png" alt="Buy from Amazon">
+						</a>
+						<!-- /amazon link -->
+
 						<p>Share This</p>
 					</div>
 				</div>
