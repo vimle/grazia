@@ -20,17 +20,9 @@
 		});
 
 
-		// Newsletter
-		SubcribeModal.fadeIn(300);
-		$('a.close-newsletter').on('click', function() {
-			SubcribeModal.fadeOut(300);
-		});
-
-		$('.smm-item').find('img:first').attr('src');
-
-
 
 		// Social Feed
+		$('.smm-item').find('img:first').attr('src');
 		$('.smm-item').each(function() {
 			var thisImg = $(this),
 				imgUrl = thisImg.find('img:first');
@@ -40,46 +32,22 @@
 
 
 
-		
+		// Newsletter
+        var visited = $.cookie("visited"),
+        	newsCloseBtn = $('a.close-newsletter');
 
-		/*
+        if (visited == null) {
+            SubcribeModal.fadeIn(300);
+            $.cookie('visited', 'yes'); 
+            alert($.cookie("visited"));         
+        }
 
-		// Social Feed
-		$('.smm-item').each(function() {
-			var thisImg = $(this),
-				imgUrl = thisImg.find('img:first').attr('src');
+        $.cookie('visited', 'yes', { expires: 1, path: '/' });
 
-			console.log('tea');
-			
-
-			$('<img src=" ' + imgUrl + '">').appendTo(thisImg);
+        newsCloseBtn.on('click', function() {
+			SubcribeModal.fadeOut(300);
 		});
 
-
-		function openFancybox() {
-		    setTimeout(function () {
-		        $('#yt').trigger('click');
-		    }, 500);
-		};
-		$(document).ready(function () {
-		    var visited = $.cookie('visited');
-		    if (visited == 'yes') {
-		        return false; // second page load, cookie active
-		    } else {
-		        openFancybox(); // first page load, launch fancybox
-		    }
-		    $.cookie('visited', 'yes', {
-		        expires: 7 // the number of days cookie  will be effective
-		    });
-		    $("#yt").click(function () {
-		        $.fancybox({
-		            href: this.href,
-		            type: "image"
-		        });
-		        return false;
-		    });
-		});
-*/
 		
 	});
 	
