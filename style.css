@@ -463,6 +463,87 @@ form.form-search:before {
 
 }
 
+
+/*homepage - social feed*/
+.social-media-mashup {
+	margin: 0 -10px;
+}
+.social-media-mashup:before,
+.social-media-mashup:after {
+	content: "";
+    display:table;
+    clear: both;
+}
+.social-media-mashup .smm-item {	
+	padding: 80px 10px 10px;
+	/*background: #6e7ea0;*/
+	background: #3D3D3D;
+	width: 25%;
+	height: 170px;
+	float: left;
+	position: relative;
+	color: #fff;
+	border: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin-bottom: 20px;
+	border-left: 5px solid #fff;
+	border-right: 5px solid #fff;
+	background-size: cover;
+}
+/*.social-media-mashup .smm-item:nth-child(odd)  {
+	background: #e94d62;
+}*/
+.social-media-mashup .smm-item:after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.social-media-mashup .smm-item p {
+	line-height: 1.2em;
+	font-size: 16px;
+	margin: 0;
+	position: relative;
+	z-index: 2;
+}
+.social-media-mashup .smm-item img {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+	opacity: .4;
+}
+.social-media-mashup .smm-item p.entry-meta {
+	position: absolute;
+	top: 10px;
+	font-size: 16px;
+	height: 40px;
+	width: 155px;
+	box-sizing: border-box;
+	left: 47px;
+	word-wrap: break-word;
+}
+
+.social-media-mashup .smm-facebook .entry-meta:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background: url(http://vimle.com/test/grazia/wp-content/uploads/2014/10/icons-sprite.png);
+	background-position: 32px -1px;
+	left: -38px;
+	-webkit-filter: grayscale(1);
+}
+.social-media-mashup .smm-item .entry-meta .sep {
+	display: none;
+}
+.social-media-mashup .smm-item .entry-meta a {
+	display: block;
+	color: #fff;
+}
 /*newsletter*/
 .modal {
 	display: none;

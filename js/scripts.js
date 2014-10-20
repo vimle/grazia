@@ -26,7 +26,36 @@
 			SubcribeModal.fadeOut(300);
 		});
 
+		$('.smm-item').find('img:first').attr('src');
+
+
+
+		// Social Feed
+		$('.smm-item').each(function() {
+			var thisImg = $(this),
+				imgUrl = thisImg.find('img:first');
+
+			thisImg.append(imgUrl);
+		});
+
+
+
+		
+
 		/*
+
+		// Social Feed
+		$('.smm-item').each(function() {
+			var thisImg = $(this),
+				imgUrl = thisImg.find('img:first').attr('src');
+
+			console.log('tea');
+			
+
+			$('<img src=" ' + imgUrl + '">').appendTo(thisImg);
+		});
+
+
 		function openFancybox() {
 		    setTimeout(function () {
 		        $('#yt').trigger('click');
