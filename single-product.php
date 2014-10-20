@@ -50,6 +50,7 @@
 					</div>
 					<div class="product-bullets column-5">
 						<?php the_content(); // Dynamic Content ?>
+<<<<<<< HEAD
 
 						<a href="<?php the_field('amazon_link'); ?>">
 							<img src="<?php echo bloginfo('template_url'); ?>/img/but_amaz.png" alt="Buy from Amazon">
@@ -57,6 +58,18 @@
 						<!-- /amazon link -->
 
 						<p>Share This</p>
+=======
+						<center>
+							<a href="<?php the_field('amazon_link'); ?>" target="_blank">
+								<img src="<?php echo bloginfo('template_url'); ?>/img/but_amaz.png" alt="Buy from Amazon">
+							</a>
+							<!-- /amazon link -->
+							<div class="prod-share-social">
+								<p>Share This</p>
+								<?php do_quickshare_output( $url, $title, $source, $description, $imgurl ); ?>
+							</div>
+						</center>
+>>>>>>> b90acd29defbc090cf113134f649aded91bd4f1d
 					</div>
 				</div>
 			</div>
