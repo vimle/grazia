@@ -52,7 +52,7 @@
 						<?php the_content(); // Dynamic Content ?>
 						<center>
 							<a href="<?php the_field('amazon_link'); ?>" target="_blank">
-								<img src="<?php echo bloginfo('template_url'); ?>/img/but_amaz.png" alt="Buy from Amazon">
+								<img src="<?php echo bloginfo('template_url'); ?>/img/but_amaz.png" alt="Buy from Amazon" class="amazon-btn">
 							</a>
 							<!-- /amazon link -->
 							<div class="prod-share-social">
