@@ -24,6 +24,7 @@ body {
 	font-size: 18px;
 	line-height: 1.5em;
 	color: #7b7d80;
+	min-width: 1400px;
 }
 /* clear */
 .clear:before,
