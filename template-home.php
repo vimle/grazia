@@ -3,7 +3,7 @@
 
 	<section class="home-featured">
 		<img src="<?php echo bloginfo('template_url'); ?>/img/tray-home.png" alt="" class="img-tray">
-		<div class="clear wrap-home-box">
+		<div class="clear wrap-home-box wrapper">
 			<div class="column-4 home-box"><a href="">Our Products</a></div>
 			<div class="column-4 home-box"><a href="">Seasonal/ Promo</a></div>
 			<div class="column-4 home-box"><a href="">Recipes</a></div>

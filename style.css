@@ -800,7 +800,7 @@ h1.bold-title {
 	font-family: "GothamBold";
 }
 .product-slider {
-	width: 550px;
+	max-width: 550px;
 }
 .product-bullets li {
 	font-size: 20px;
@@ -1179,16 +1179,50 @@ span.wpcf7-form-control-wrap textarea {
 	}
 }
 @media only screen and (max-width:1024px) {
-
+	.post-img {
+		float: right;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
 }
 @media only screen and (max-width:768px) {
-
+	.product-bullets h4 {
+		font-size: 16px;
+	}
+	.product-bullets li {
+		font-size: 14px;
+		margin-bottom: 16px;
+	}
+	.post-img {
+		float: right;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
 }
-@media only screen and (max-width:480px) {
 
+@media only screen and (max-width:706px) {
+	.home-box {
+		width: 200px;
+		height: 200px;
+	}
+	.wrap-home-box {
+		bottom: -175px;
+	}
+}
+
+@media only screen and (max-width:480px) {
+	.post-img {
+		float: right;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
 }
 @media only screen and (max-width:320px) {
-
+	.post-img {
+		float: right;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
 }
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),
 	   only screen and (min-resolution:144dpi) {
