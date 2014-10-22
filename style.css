@@ -848,7 +848,7 @@ h1.bold-title {
 	border-radius: 10px;
 }
 .close-review {
-	background: #fff url(img/sprite.png) -150px -150px no-repeat;
+	background: #fff url(img/sprite.png) -15px -150px no-repeat;
 	position: absolute;
 	top: -18px;
 	right: -19px;

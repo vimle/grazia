@@ -83,9 +83,9 @@ jQuery(function($) {
 				gz.productReview.fadeIn(300);
 			});
 
-			gz.closeRev.on('click', function(e) {
-				e.preventDefault()
-				gz.productReview.fadeOut(300);
+			$('.close-review').on('click', function(e) {
+			e.preventDefault();
+			gz.productReview.fadeOut(300);
 			});
 
 		}
